@@ -1,0 +1,9 @@
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe.config
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.pdb
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.AssemblyReference.cache
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.Properties.Resources.resources
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.GenerateResource.cache
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.CoreCompileInputs.cache
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.exe
+C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.pdb
