@@ -1,9 +1,53 @@
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe.config
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.pdb
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.AssemblyReference.cache
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.Properties.Resources.resources
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.GenerateResource.cache
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.CoreCompileInputs.cache
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.exe
-C:\Users\Ruth Simona\Desktop\parcialSis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.pdb
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe.config
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.pdb
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.dll
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.dll
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.dll
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.SqlServer.dll
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.pdb
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.dll.config
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.pdb
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.dll.config
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.xml
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.SqlServer.xml
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.AssemblyReference.cache
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.Form1.resources
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.Properties.Resources.resources
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.GenerateResource.cache
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.CoreCompileInputs.cache
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicore.BC1586D7.Up2Date
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.exe
+D:\4to Semestre\Proyecto para sis457\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.pdb
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe.config
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.exe
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CpLicoreria.pdb
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.SqlServer.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.pdb
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\CadLicoreria.dll.config
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.pdb
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\ClnLicoreria.dll.config
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\EntityFramework.SqlServer.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.AssemblyReference.cache
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmPrincipal.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.Properties.Resources.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.GenerateResource.cache
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.csproj.CoreCompileInputs.cache
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicore.BC1586D7.Up2Date
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.exe
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.pdb
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmCliente.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.4.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1FlexGrid.4.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1FlexGrid.GroupPanel.4.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.4.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1FlexGrid.4.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1FlexGrid.GroupPanel.4.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.exe.licenses
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmProducto.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmEmpleado.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmVenta.resources
