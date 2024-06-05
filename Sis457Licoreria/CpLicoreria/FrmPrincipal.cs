@@ -8,15 +8,19 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace CpLicoreria
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        FrmAutenticacion frmAutenticacion;
+        
+        public FrmPrincipal(FrmAutenticacion frmAutenticacion)
         {
             InitializeComponent();
+            this.frmAutenticacion = frmAutenticacion;
         }
 
 
@@ -85,6 +89,10 @@ namespace CpLicoreria
             Application.Exit();
         }
         // Desde aki
+        private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmAutenticacion.Visible = true;
+        }
         private void AbrirFormEnPanel(object formhija)
         {
             if (this.pnlContenedor.Controls.Count > 0)

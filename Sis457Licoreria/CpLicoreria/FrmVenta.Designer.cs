@@ -47,6 +47,7 @@
             this.nudCantidadP = new System.Windows.Forms.NumericUpDown();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.gbxProducto = new System.Windows.Forms.GroupBox();
+            this.txtCodigo = new C1.Win.C1Input.C1TextBox();
             this.txtPrecio = new C1.Win.C1Input.C1TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
@@ -64,10 +65,10 @@
             this.erpRazonSocial = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCelular = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpProducto = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtCodigo = new C1.Win.C1Input.C1TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgListaVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadP)).BeginInit();
             this.gbxProducto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrecio)).BeginInit();
             this.gbxCliente.SuspendLayout();
             this.gbxVenta.SuspendLayout();
@@ -76,7 +77,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonSocial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo)).BeginInit();
             this.SuspendLayout();
             // 
             // dvgListaVenta
@@ -161,6 +161,7 @@
             this.btnRegistrarVenta.Text = " Registrar\r\nVenta";
             this.btnRegistrarVenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistrarVenta.UseVisualStyleBackColor = true;
+            this.btnRegistrarVenta.Click += new System.EventHandler(this.btnRegistrarVenta_Click);
             // 
             // lblTitulo
             // 
@@ -180,6 +181,7 @@
             this.cbxProducto.Name = "cbxProducto";
             this.cbxProducto.Size = new System.Drawing.Size(160, 24);
             this.cbxProducto.TabIndex = 8;
+            this.cbxProducto.Click += new System.EventHandler(this.cbxProducto_SelectedIndexChanged_1);
             // 
             // tbxIdProducto
             // 
@@ -265,6 +267,7 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // gbxProducto
             // 
@@ -285,6 +288,15 @@
             this.gbxProducto.TabIndex = 19;
             this.gbxProducto.TabStop = false;
             this.gbxProducto.Text = "Información del Producto";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(15, 53);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(133, 20);
+            this.txtCodigo.TabIndex = 26;
+            this.txtCodigo.Tag = null;
             // 
             // txtPrecio
             // 
@@ -389,6 +401,7 @@
             this.btnVolver.Text = "Volver";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // gbxVenta
             // 
@@ -437,20 +450,11 @@
             // 
             this.erpProducto.ContainerControl = this;
             // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(15, 53);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(133, 20);
-            this.txtCodigo.TabIndex = 26;
-            this.txtCodigo.Tag = null;
-            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 710);
+            this.ClientSize = new System.Drawing.Size(1275, 710);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.dvgListaVenta);
             this.Controls.Add(this.lblTotal);
@@ -464,10 +468,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVenta";
             this.Text = "FrmVenta";
+            this.Load += new System.EventHandler(this.FrmVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgListaVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadP)).EndInit();
             this.gbxProducto.ResumeLayout(false);
             this.gbxProducto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrecio)).EndInit();
             this.gbxCliente.ResumeLayout(false);
             this.gbxCliente.PerformLayout();
@@ -478,7 +484,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonSocial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

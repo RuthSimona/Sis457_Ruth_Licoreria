@@ -51,3 +51,8 @@ D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLi
 D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmProducto.resources
 D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmEmpleado.resources
 D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmVenta.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\obj\Debug\CpLicoreria.FrmAutenticacion.resources
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1Command.4.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1Input.4.dll
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1Command.4.xml
+D:\4to Semestre\Proyecto Sis457\Sis457_RuthSimona_Licoreria\Sis457Licoreria\CpLicoreria\bin\Debug\C1.Win.C1Input.4.xml

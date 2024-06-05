@@ -80,8 +80,8 @@ namespace CpLicoreria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmPrincipal principal = new FrmPrincipal();
-            principal.Show();
+            //FrmPrincipal principal = new FrmPrincipal();
+            //principal.Show();
             this.Close();
         }
 
