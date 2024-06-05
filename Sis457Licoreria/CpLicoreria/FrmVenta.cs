@@ -2,12 +2,6 @@
 using ClnLicoreria;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CpLicoreria
@@ -162,12 +156,12 @@ namespace CpLicoreria
             {
                 limpiar();
             }
-        }  
+        }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-           // FrmPrincipal frmPrincipal = new FrmPrincipal();
-          //  frmPrincipal.ShowDialog();
+            //FrmPrincipal frmPrincipal = new FrmPrincipal();
+            //frmPrincipal.ShowDialog();
             this.Close();
         }
     }
