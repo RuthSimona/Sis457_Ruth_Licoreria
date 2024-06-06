@@ -181,7 +181,7 @@
             this.cbxProducto.Name = "cbxProducto";
             this.cbxProducto.Size = new System.Drawing.Size(160, 24);
             this.cbxProducto.TabIndex = 8;
-            this.cbxProducto.Click += new System.EventHandler(this.cbxProducto_SelectedIndexChanged_1);
+            this.cbxProducto.SelectedIndexChanged += new System.EventHandler(this.cbxProducto_SelectedIndexChanged_1);
             // 
             // tbxIdProducto
             // 

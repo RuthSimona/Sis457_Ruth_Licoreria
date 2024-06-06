@@ -15,6 +15,7 @@ namespace CpLicoreria
     public partial class FrmProducto : Form
     {
         bool esNuevo = false;
+
         public FrmProducto()
         {
             InitializeComponent();
@@ -33,10 +34,13 @@ namespace CpLicoreria
             dgvLista.Columns["precio"].HeaderText = "Precio";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
             dgvLista.Columns["categoria"].HeaderText = "Categoria";
+
+            // Ajuste en la habilitación/deshabilitación de los botones
             btnEditar.Enabled = productos.Count > 0;
             btnEliminar.Enabled = productos.Count > 0;
-            btnEliminar.Enabled = false;
-            if (productos.Count > 0) dgvLista.Rows[0].Cells["nombre"].Selected = true;
+
+            if (productos.Count > 0)
+                dgvLista.Rows[0].Cells["nombre"].Selected = true;
         }
 
         private void FrmProducto_Load(object sender, EventArgs e)
@@ -76,13 +80,6 @@ namespace CpLicoreria
             txtNombre.Text = string.Empty;
             txtDescripcion.Text = string.Empty;
             nudPrecio.Value = 0;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //FrmPrincipal principal = new FrmPrincipal();
-            //principal.Show();
-            this.Close();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -146,7 +143,7 @@ namespace CpLicoreria
                 }
                 listar();
                 btnCancelar.PerformClick();
-                MessageBox.Show("Producto guardado correctamente", "::: Cafeteria - Mensaje :::",
+                MessageBox.Show("Producto guardado correctamente", "::: Licoreria - Mensaje :::",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -157,12 +154,12 @@ namespace CpLicoreria
             int idProducto = Convert.ToInt32(dgvLista.Rows[index].Cells["idProducto"].Value);
             string codigo = dgvLista.Rows[index].Cells["codigo"].Value.ToString();
             DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el producto {codigo}?",
-                "::: Cafeteria - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                "::: Licoreria - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dialog == DialogResult.OK)
             {
-                EmpleadoCln.eliminar(idProducto, "cafeCapital");
+                ProductoCln.eliminar(idProducto, "licoreriaCapital"); 
                 listar();
-                MessageBox.Show("Producto dado de baja correctamente", "::: Cafeteria - Mensaje :::",
+                MessageBox.Show("Producto dado de baja correctamente", "::: Licoreria - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -170,6 +167,11 @@ namespace CpLicoreria
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             limpiar();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

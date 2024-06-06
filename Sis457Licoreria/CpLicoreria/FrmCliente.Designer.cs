@@ -43,13 +43,13 @@
             this.lblCedula = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.lblRazon = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pnlAcciones = new System.Windows.Forms.Panel();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.gbxLista = new System.Windows.Forms.GroupBox();
-            this.lblRazon = new System.Windows.Forms.Label();
             this.erpRazonsocial = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCedula = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCelular = new System.Windows.Forms.ErrorProvider(this.components);
@@ -86,6 +86,7 @@
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -99,6 +100,7 @@
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnNuevo
             // 
@@ -112,6 +114,7 @@
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnLimpiar
             // 
@@ -125,6 +128,7 @@
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // txtRazon
             // 
@@ -146,6 +150,7 @@
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVolver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnCancelar
             // 
@@ -157,6 +162,7 @@
             this.btnCancelar.TabIndex = 14;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -168,6 +174,7 @@
             this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtCelular
             // 
@@ -224,6 +231,16 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos";
             // 
+            // lblRazon
+            // 
+            this.lblRazon.AutoSize = true;
+            this.lblRazon.Location = new System.Drawing.Point(17, 52);
+            this.lblRazon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRazon.Name = "lblRazon";
+            this.lblRazon.Size = new System.Drawing.Size(87, 16);
+            this.lblRazon.TabIndex = 8;
+            this.lblRazon.Text = "Razon Social";
+            // 
             // btnBuscar
             // 
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,6 +253,7 @@
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // dgvLista
             // 
@@ -294,16 +312,6 @@
             this.gbxLista.TabIndex = 15;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Clientes";
-            // 
-            // lblRazon
-            // 
-            this.lblRazon.AutoSize = true;
-            this.lblRazon.Location = new System.Drawing.Point(17, 52);
-            this.lblRazon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRazon.Name = "lblRazon";
-            this.lblRazon.Size = new System.Drawing.Size(87, 16);
-            this.lblRazon.TabIndex = 8;
-            this.lblRazon.Text = "Razon Social";
             // 
             // erpRazonsocial
             // 
