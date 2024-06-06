@@ -170,6 +170,7 @@
             this.btnrptcompra.TabIndex = 18;
             this.btnrptcompra.Text = "Reporte Compras";
             this.btnrptcompra.UseVisualStyleBackColor = false;
+            this.btnrptcompra.Click += new System.EventHandler(this.btnrptcompra_Click);
             // 
             // btnrptventa
             // 
@@ -187,6 +188,7 @@
             this.btnrptventa.TabIndex = 16;
             this.btnrptventa.Text = "Reporte Ventas";
             this.btnrptventa.UseVisualStyleBackColor = false;
+            this.btnrptventa.Click += new System.EventHandler(this.btnrptventa_Click);
             // 
             // SubmenuReportes
             // 
@@ -237,6 +239,7 @@
             this.btnrptpagos.TabIndex = 18;
             this.btnrptpagos.Text = "Reporte Pagos";
             this.btnrptpagos.UseVisualStyleBackColor = false;
+            this.btnrptpagos.Click += new System.EventHandler(this.btnrptpagos_Click);
             // 
             // panel9
             // 
@@ -312,7 +315,7 @@
             this.btnReporte.TabIndex = 13;
             this.btnReporte.Text = "Reportes";
             this.btnReporte.UseVisualStyleBackColor = false;
-            this.btnReporte.Click += new System.EventHandler(this.btnrptventa_Click);
+            this.btnReporte.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // panel6
             // 
@@ -415,12 +418,12 @@
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
+            this.btnCliente.Image = global::CpLicoreria.Properties.Resources.clientes1;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(4, 258);
+            this.btnCliente.Location = new System.Drawing.Point(4, 244);
             this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(289, 39);
+            this.btnCliente.Size = new System.Drawing.Size(289, 53);
             this.btnCliente.TabIndex = 5;
             this.btnCliente.Text = "Clientes";
             this.btnCliente.UseVisualStyleBackColor = false;
@@ -495,6 +498,9 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.pnlContenedor.Location = new System.Drawing.Point(293, 47);
             this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4);

@@ -35,8 +35,6 @@ namespace CpLicoreria
             if (empleados.Count > 0) dgvLista.Rows[0].Cells["nombre"].Selected = true;
         }
 
-
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
@@ -46,17 +44,25 @@ namespace CpLicoreria
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            esNuevo = false;
-            Size = new Size(775, 644);
+            if (dgvLista.CurrentCell != null)
+            {
+                esNuevo = false;
+                Size = new Size(775, 644);
 
-            int index = dgvLista.CurrentCell.RowIndex;
-            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
-            var empleado = EmpleadoCln.get(id);
-            txtNombre.Text = empleado.nombre;
-            txtApellidos.Text = empleado.apellidos;
-            txtTelefono.Text = empleado.telefono;
-            cbxCargo.Text = empleado.cargo;
-            nudSalario.Value = Convert.ToUInt32(empleado.salario);
+                int index = dgvLista.CurrentCell.RowIndex;
+                int id = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
+                var empleado = EmpleadoCln.get(id);
+                txtNombre.Text = empleado.nombre;
+                txtApellidos.Text = empleado.apellidos;
+                txtTelefono.Text = empleado.telefono;
+                cbxCargo.Text = empleado.cargo;
+                nudSalario.Value = Convert.ToUInt32(empleado.salario);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un empleado para editar", "::: Minerva - Mensaje :::"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -77,8 +83,6 @@ namespace CpLicoreria
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            //FrmPrincipal principal = new FrmPrincipal();
-            //principal.Show();
             this.Close();
         }
 
@@ -101,36 +105,43 @@ namespace CpLicoreria
             erpCargo.SetError(cbxCargo, "");
             erpSalario.SetError(nudSalario, "");
             erpUsuario.SetError(txtUsuario, "");
+
             if (string.IsNullOrEmpty(txtNombre.Text))
             {
                 esValido = false;
                 erpNombre.SetError(txtNombre, "El campo Nombre es obligatorio");
             }
+
             if (string.IsNullOrEmpty(txtApellidos.Text))
             {
                 esValido = false;
                 erpApellidos.SetError(txtApellidos, "El campo Apellidos es obligatorio");
             }
+
             if (string.IsNullOrEmpty(txtTelefono.Text))
             {
                 esValido = false;
-                erpTelefono.SetError(txtTelefono, "El campo Telefono de Medida es obligatorio");
+                erpTelefono.SetError(txtTelefono, "El campo Telefono es obligatorio");
             }
+
             if (string.IsNullOrEmpty(cbxCargo.Text))
             {
                 esValido = false;
                 erpCargo.SetError(cbxCargo, "El campo Cargo es obligatorio");
             }
-            if (string.IsNullOrEmpty(nudSalario.Text))
+
+            if (nudSalario.Value <= 0)
             {
                 esValido = false;
-                erpSalario.SetError(nudSalario, "El Salario Cargo es obligatorio");
+                erpSalario.SetError(nudSalario, "El campo Salario es obligatorio y debe ser mayor a 0");
             }
+
             if (chkUsuario.Checked && string.IsNullOrEmpty(txtUsuario.Text))
             {
                 esValido = false;
-                erpUsuario.SetError(txtUsuario, "El campo Saldo debe ser mayor o igual a 0");
+                erpUsuario.SetError(txtUsuario, "El campo Usuario es obligatorio si está marcado");
             }
+
             return esValido;
         }
 
@@ -138,15 +149,17 @@ namespace CpLicoreria
         {
             if (validar())
             {
-                var empleado = new Empleado();
-                empleado.nombre = txtNombre.Text.Trim();
-                empleado.apellidos = txtApellidos.Text.Trim();
-                empleado.telefono = txtTelefono.Text;
-                empleado.cargo = cbxCargo.Text;
-                empleado.salario = (double)nudSalario.Value;
-                empleado.usuarioRegistro = Util.usuario.usuario1;
+                var empleado = new Empleado
+                {
+                    nombre = txtNombre.Text.Trim(),
+                    apellidos = txtApellidos.Text.Trim(),
+                    telefono = txtTelefono.Text,
+                    cargo = cbxCargo.Text,
+                    salario = (double)nudSalario.Value,
+                    usuarioRegistro = Util.usuario.usuario1
+                };
 
-                if (esNuevo)
+                if (esNuevo) 
                 {
                     empleado.fechaRegistro = DateTime.Now;
                     empleado.estado = 1;
@@ -154,44 +167,63 @@ namespace CpLicoreria
 
                     if (chkUsuario.Checked)
                     {
-                        var usuario = new Usuario();
-                        usuario.usuario1 = txtUsuario.Text.Trim();
-                        usuario.clave = Util.Encrypt("CAFE123");
-                        usuario.idEmpleado = id;
-                        usuario.usuarioRegistro = "cafeCapital";
-                        usuario.fechaRegistro = DateTime.Now;
-                        usuario.estado = 1;
+                        var usuario = new Usuario
+                        {
+                            usuario1 = txtUsuario.Text.Trim(),
+                            clave = Util.Encrypt("hola123"), // Aquí se encripta la contraseña por defecto
+                            idEmpleado = id,
+                            usuarioRegistro = "Juancho",
+                            fechaRegistro = DateTime.Now,
+                            estado = 1
+                        };
                         UsuarioCln.insertar(usuario);
                     }
                 }
-                else
+                else // Actualizar un empleado existente
                 {
-                    chkUsuario.Visible = false; ;
-                    int index = dgvLista.CurrentCell.RowIndex;
-                    empleado.idEmpleado = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
-                    EmpleadoCln.actualizar(empleado);
-
+                    if (dgvLista.CurrentCell != null)
+                    {
+                        int index = dgvLista.CurrentCell.RowIndex;
+                        empleado.idEmpleado = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
+                        EmpleadoCln.actualizar(empleado);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seleccione un empleado para guardar cambios", "::: Minerva - Mensaje :::"
+                            , MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
+
                 listar();
                 btnCancelar.PerformClick();
-                MessageBox.Show("empleado guardado correctamente", "::: Minerva - Mensaje :::",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Empleado guardado correctamente", "::: Minerva - Mensaje :::"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int index = dgvLista.CurrentCell.RowIndex;
-            int idEmpleado = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
-            string nombre = dgvLista.Rows[index].Cells["nombre"].Value.ToString();
-            DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el empleado {nombre}?",
-                "::: Cafeteria - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (dialog == DialogResult.OK)
+            if (dgvLista.CurrentCell != null)
             {
-                EmpleadoCln.eliminar(idEmpleado, "cafeCapital");
-                listar();
-                MessageBox.Show("empleado dado de baja correctamente", "::: Cafeteria - Mensaje :::",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                int index = dgvLista.CurrentCell.RowIndex;
+                int idEmpleado = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
+                string nombre = dgvLista.Rows[index].Cells["nombre"].Value.ToString();
+                DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el empleado {nombre}?", "::: Cafeteria - Mensaje :::"
+                    , MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.OK)
+                {
+                    EmpleadoCln.eliminar(idEmpleado, "Juancho");
+                    listar();
+                    MessageBox.Show("Empleado dado de baja correctamente", "::: Cafeteria - Mensaje :::"
+                        , MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un empleado para eliminar", "::: Minerva - Mensaje :::"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -200,7 +232,7 @@ namespace CpLicoreria
             txtUsuario.Visible = chkUsuario.Checked;
         }
 
-        private void FrmEmpleado_Load_1(object sender, EventArgs e)
+        private void FrmEmpleado_Load(object sender, EventArgs e)
         {
             Size = new Size(775, 441);
             listar();
