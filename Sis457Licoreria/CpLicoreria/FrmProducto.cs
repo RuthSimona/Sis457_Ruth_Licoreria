@@ -2,12 +2,8 @@
 using ClnLicoreria;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CpLicoreria
@@ -34,6 +30,7 @@ namespace CpLicoreria
             dgvLista.Columns["precio"].HeaderText = "Precio";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
             dgvLista.Columns["categoria"].HeaderText = "Categoria";
+            dgvLista.Columns["stock"].HeaderText = "Stock";
 
             // Ajuste en la habilitación/deshabilitación de los botones
             btnEditar.Enabled = productos.Count > 0;
@@ -66,12 +63,14 @@ namespace CpLicoreria
             txtCodigo.Text = producto.codigo;
             txtNombre.Text = producto.nombre;
             txtDescripcion.Text = producto.descripcion;
-            nudPrecio.Value = producto.precio;
+            nudStock.Value = producto.stock; // Asignar stock
+            nudPrecio.Value = producto.precio; // Asignar precio
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Size = new Size(602, 499);
+            limpiar();
         }
 
         private void limpiar()
@@ -79,6 +78,7 @@ namespace CpLicoreria
             txtCodigo.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtDescripcion.Text = string.Empty;
+            nudStock.Value = 0;
             nudPrecio.Value = 0;
         }
 
@@ -99,6 +99,8 @@ namespace CpLicoreria
             erpCodigo.SetError(txtCodigo, "");
             erpNombre.SetError(txtNombre, "");
             erpPrecio.SetError(nudPrecio, "");
+            erpStock.SetError(nudStock, "");
+
             if (string.IsNullOrEmpty(txtCodigo.Text))
             {
                 esValido = false;
@@ -109,11 +111,17 @@ namespace CpLicoreria
                 esValido = false;
                 erpNombre.SetError(txtNombre, "El campo Nombre es obligatorio");
             }
-            if (string.IsNullOrEmpty(nudPrecio.Text))
+            if (nudPrecio.Value <= 0)
             {
                 esValido = false;
                 erpPrecio.SetError(nudPrecio, "El campo Precio es obligatorio");
             }
+            if (nudStock.Value < 0)
+            {
+                esValido = false;
+                erpStock.SetError(nudStock, "El campo Stock no puede ser negativo");
+            }
+
             return esValido;
         }
 
@@ -127,6 +135,7 @@ namespace CpLicoreria
                 producto.nombre = txtNombre.Text.Trim();
                 producto.descripcion = txtDescripcion.Text.Trim();
                 producto.precio = nudPrecio.Value;
+                producto.stock = (int)nudStock.Value;
                 producto.usuarioRegistro = Util.usuario.usuario1;
 
                 if (esNuevo)
@@ -157,7 +166,7 @@ namespace CpLicoreria
                 "::: Licoreria - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dialog == DialogResult.OK)
             {
-                ProductoCln.eliminar(idProducto, "licoreriaCapital"); 
+                ProductoCln.eliminar(idProducto, "licoreriaCapital");
                 listar();
                 MessageBox.Show("Producto dado de baja correctamente", "::: Licoreria - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

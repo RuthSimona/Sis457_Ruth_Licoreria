@@ -39,8 +39,9 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.nudPrecio = new System.Windows.Forms.NumericUpDown();
+            this.nudStock = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -56,16 +57,20 @@
             this.erpCodigo = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.nudPrecio = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.erpStock = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCategoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStock)).BeginInit();
             this.panel1.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpStock)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxLista
@@ -154,7 +159,7 @@
             // 
             // nudCategoria
             // 
-            this.nudCategoria.Location = new System.Drawing.Point(20, 239);
+            this.nudCategoria.Location = new System.Drawing.Point(30, 337);
             this.nudCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.nudCategoria.Name = "nudCategoria";
             this.nudCategoria.Size = new System.Drawing.Size(65, 22);
@@ -163,7 +168,7 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(16, 219);
+            this.lblCategoria.Location = new System.Drawing.Point(27, 317);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(66, 16);
@@ -173,7 +178,7 @@
             // btnCancelar
             // 
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(75, 383);
+            this.btnCancelar.Location = new System.Drawing.Point(75, 466);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(193, 55);
@@ -185,7 +190,7 @@
             // btnGuardar
             // 
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(75, 303);
+            this.btnGuardar.Location = new System.Drawing.Point(75, 398);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(193, 55);
@@ -194,13 +199,13 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // nudPrecio
+            // nudStock
             // 
-            this.nudPrecio.Location = new System.Drawing.Point(20, 191);
-            this.nudPrecio.Margin = new System.Windows.Forms.Padding(4);
-            this.nudPrecio.Name = "nudPrecio";
-            this.nudPrecio.Size = new System.Drawing.Size(248, 22);
-            this.nudPrecio.TabIndex = 14;
+            this.nudStock.Location = new System.Drawing.Point(19, 254);
+            this.nudStock.Margin = new System.Windows.Forms.Padding(4);
+            this.nudStock.Name = "nudStock";
+            this.nudStock.Size = new System.Drawing.Size(248, 22);
+            this.nudStock.TabIndex = 14;
             // 
             // panel1
             // 
@@ -214,6 +219,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 74);
             this.panel1.TabIndex = 13;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(284, 9);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(113, 57);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblPrecio
             // 
@@ -273,11 +292,13 @@
             // 
             // gbxDatos
             // 
+            this.gbxDatos.Controls.Add(this.label1);
+            this.gbxDatos.Controls.Add(this.nudPrecio);
             this.gbxDatos.Controls.Add(this.nudCategoria);
             this.gbxDatos.Controls.Add(this.lblCategoria);
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.Controls.Add(this.nudPrecio);
+            this.gbxDatos.Controls.Add(this.nudStock);
             this.gbxDatos.Controls.Add(this.lblPrecio);
             this.gbxDatos.Controls.Add(this.txtDescripcion);
             this.gbxDatos.Controls.Add(this.lblDescripcion);
@@ -289,7 +310,7 @@
             this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
             this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxDatos.Size = new System.Drawing.Size(335, 466);
+            this.gbxDatos.Size = new System.Drawing.Size(335, 529);
             this.gbxDatos.TabIndex = 15;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos";
@@ -358,19 +379,27 @@
             // 
             this.erpPrecio.ContainerControl = this;
             // 
-            // btnEliminar
+            // nudPrecio
             // 
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(284, 9);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(113, 57);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.nudPrecio.Location = new System.Drawing.Point(20, 191);
+            this.nudPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.nudPrecio.Name = "nudPrecio";
+            this.nudPrecio.Size = new System.Drawing.Size(248, 22);
+            this.nudPrecio.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 217);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Stock";
+            // 
+            // erpStock
+            // 
+            this.erpStock.ContainerControl = this;
             // 
             // FrmProducto
             // 
@@ -387,16 +416,19 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmProducto";
             this.Text = "FrmProducto";
+            this.Load += new System.EventHandler(this.FrmProducto_Load);
             this.gbxLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCategoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStock)).EndInit();
             this.panel1.ResumeLayout(false);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpStock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,7 +446,7 @@
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.NumericUpDown nudPrecio;
+        private System.Windows.Forms.NumericUpDown nudStock;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblDescripcion;
@@ -432,5 +464,8 @@
         private System.Windows.Forms.ErrorProvider erpNombre;
         private System.Windows.Forms.ErrorProvider erpPrecio;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown nudPrecio;
+        private System.Windows.Forms.ErrorProvider erpStock;
     }
 }

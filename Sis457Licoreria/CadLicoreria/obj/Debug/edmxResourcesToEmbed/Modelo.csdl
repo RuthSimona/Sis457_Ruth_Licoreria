@@ -9,7 +9,7 @@
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__idCate__3D5E1FD2" FromRole="Categoria" ToRole="Producto" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__idCate__4222D4EF" FromRole="Categoria" ToRole="Producto" />
   </EntityType>
   <EntityType Name="Cliente">
     <Key>
@@ -37,7 +37,7 @@
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__idEmple__38996AB5" FromRole="Empleado" ToRole="Usuario" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__idEmple__3C69FB99" FromRole="Empleado" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="Producto">
     <Key>
@@ -48,11 +48,12 @@
     <Property Name="codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stock" Type="Int32" Nullable="false" />
     <Property Name="precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Categoria" Relationship="Self.FK__Producto__idCate__3D5E1FD2" FromRole="Producto" ToRole="Categoria" />
+    <NavigationProperty Name="Categoria" Relationship="Self.FK__Producto__idCate__4222D4EF" FromRole="Producto" ToRole="Categoria" />
     <NavigationProperty Name="VentaDetalle" Relationship="Self.fk_VentaDetalle_Producto" FromRole="Producto" ToRole="VentaDetalle" />
   </EntityType>
   <EntityType Name="Usuario">
@@ -66,7 +67,7 @@
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Empleado" Relationship="Self.FK__Usuario__idEmple__38996AB5" FromRole="Usuario" ToRole="Empleado" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK__Usuario__idEmple__3C69FB99" FromRole="Usuario" ToRole="Empleado" />
     <NavigationProperty Name="Venta" Relationship="Self.fk_Venta_Usuario" FromRole="Usuario" ToRole="Venta" />
   </EntityType>
   <EntityType Name="Venta">
@@ -101,7 +102,7 @@
     <NavigationProperty Name="Producto" Relationship="Self.fk_VentaDetalle_Producto" FromRole="VentaDetalle" ToRole="Producto" />
     <NavigationProperty Name="Venta" Relationship="Self.fk_VentaDetalle_Venta" FromRole="VentaDetalle" ToRole="Venta" />
   </EntityType>
-  <Association Name="FK__Producto__idCate__3D5E1FD2">
+  <Association Name="FK__Producto__idCate__4222D4EF">
     <End Role="Categoria" Type="Self.Categoria" Multiplicity="1" />
     <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
     <ReferentialConstraint>
@@ -125,7 +126,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Usuario__idEmple__38996AB5">
+  <Association Name="FK__Usuario__idEmple__3C69FB99">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
     <ReferentialConstraint>
@@ -181,7 +182,7 @@
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />
     <EntitySet Name="Venta" EntityType="Self.Venta" />
     <EntitySet Name="VentaDetalle" EntityType="Self.VentaDetalle" />
-    <AssociationSet Name="FK__Producto__idCate__3D5E1FD2" Association="Self.FK__Producto__idCate__3D5E1FD2">
+    <AssociationSet Name="FK__Producto__idCate__4222D4EF" Association="Self.FK__Producto__idCate__4222D4EF">
       <End Role="Categoria" EntitySet="Categoria" />
       <End Role="Producto" EntitySet="Producto" />
     </AssociationSet>
@@ -189,7 +190,7 @@
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Venta" EntitySet="Venta" />
     </AssociationSet>
-    <AssociationSet Name="FK__Usuario__idEmple__38996AB5" Association="Self.FK__Usuario__idEmple__38996AB5">
+    <AssociationSet Name="FK__Usuario__idEmple__3C69FB99" Association="Self.FK__Usuario__idEmple__3C69FB99">
       <End Role="Empleado" EntitySet="Empleado" />
       <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
@@ -244,11 +245,13 @@
     <Property Type="String" Name="codigo" Nullable="false" MaxLength="20" />
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
     <Property Type="String" Name="descripcion" Nullable="false" MaxLength="500" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
     <Property Type="Decimal" Name="precio" Nullable="false" Precision="10" Scale="2" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />
     <Property Type="String" Name="categoria" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="stock1" Nullable="false" />
   </ComplexType>
   <ComplexType Name="paVentaDetalleListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
