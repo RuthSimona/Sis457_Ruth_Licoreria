@@ -58,7 +58,6 @@
             this.btnVenta = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProducto = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -68,7 +67,6 @@
             this.SubmenuReportes.SuspendLayout();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -270,7 +268,6 @@
             this.MenuVertical.Controls.Add(this.btnVenta);
             this.MenuVertical.Controls.Add(this.panel1);
             this.MenuVertical.Controls.Add(this.btnProducto);
-            this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4);
@@ -418,7 +415,6 @@
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCliente.Image = global::CpLicoreria.Properties.Resources.clientes1;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliente.Location = new System.Drawing.Point(4, 244);
             this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -485,17 +481,7 @@
             this.btnProducto.UseVisualStyleBackColor = false;
             this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
+
             // pnlContenedor
             // 
             this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -528,7 +514,6 @@
             this.SubmenuReportes.ResumeLayout(false);
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -82,7 +82,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(72, 45);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1044, 50);
+            this.lblTitulo.Size = new System.Drawing.Size(1328, 50);
             this.lblTitulo.TabIndex = 37;
             this.lblTitulo.Text = "Empleados";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,7 +130,7 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(867, 217);
+            this.panel1.Location = new System.Drawing.Point(1013, 222);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 303);
@@ -198,10 +198,10 @@
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(827, 109);
+            this.btnBuscar.Location = new System.Drawing.Point(1013, 110);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(147, 58);
+            this.btnBuscar.Size = new System.Drawing.Size(248, 58);
             this.btnBuscar.TabIndex = 40;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -379,7 +379,7 @@
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(319, 726);
+            this.btnGuardar.Location = new System.Drawing.Point(464, 742);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(172, 55);
@@ -393,7 +393,7 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(536, 726);
+            this.btnCancelar.Location = new System.Drawing.Point(802, 742);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(171, 55);
@@ -431,7 +431,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 833);
+            this.ClientSize = new System.Drawing.Size(1465, 833);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtParametro);
@@ -444,6 +444,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEmpleado";
             this.Text = "FrmEmpledo";
+            this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.panel1.ResumeLayout(false);

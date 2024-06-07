@@ -341,9 +341,9 @@
             this.lblCi.Location = new System.Drawing.Point(8, 25);
             this.lblCi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCi.Name = "lblCi";
-            this.lblCi.Size = new System.Drawing.Size(124, 16);
+            this.lblCi.Size = new System.Drawing.Size(144, 16);
             this.lblCi.TabIndex = 2;
-            this.lblCi.Text = "Carnet de Identidad";
+            this.lblCi.Text = "Carnet de Identidad/Nit";
             // 
             // txtrazonSocial
             // 

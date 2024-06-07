@@ -18,6 +18,7 @@ namespace CpLicoreria
         public FrmEmpleado()
         {
             InitializeComponent();
+
         }
 
         private void listar()
@@ -96,12 +97,14 @@ namespace CpLicoreria
             if (e.KeyChar == (char)Keys.Enter) listar();
         }
 
+        private bool esFormularioValido = true; // Variable para controlar si el formulario es válido
+
         private bool validar()
         {
             bool esValido = true;
             erpNombre.SetError(txtNombre, "");
             erpApellidos.SetError(txtApellidos, "");
-            erpTelefono.SetError(txtTelefono, "");
+            erpTelefono.SetError(txtTelefono, ""); // Reinicia el error anterior
             erpCargo.SetError(cbxCargo, "");
             erpSalario.SetError(nudSalario, "");
             erpUsuario.SetError(txtUsuario, "");
@@ -118,10 +121,10 @@ namespace CpLicoreria
                 erpApellidos.SetError(txtApellidos, "El campo Apellidos es obligatorio");
             }
 
-            if (string.IsNullOrEmpty(txtTelefono.Text))
+            if (!string.IsNullOrEmpty(txtTelefono.Text) && txtTelefono.Text.Length < 8)
             {
                 esValido = false;
-                erpTelefono.SetError(txtTelefono, "El campo Telefono es obligatorio");
+                erpTelefono.SetError(txtTelefono, "El campo Telefono debe tener al menos 8 caracteres");
             }
 
             if (string.IsNullOrEmpty(cbxCargo.Text))
@@ -141,6 +144,9 @@ namespace CpLicoreria
                 esValido = false;
                 erpUsuario.SetError(txtUsuario, "El campo Usuario es obligatorio si está marcado");
             }
+
+            // Actualiza la variable esFormularioValido según la validez de los datos
+            esFormularioValido = esValido;
 
             return esValido;
         }

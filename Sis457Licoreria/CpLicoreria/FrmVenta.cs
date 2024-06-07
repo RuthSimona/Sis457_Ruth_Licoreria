@@ -160,8 +160,6 @@ namespace CpLicoreria
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            //FrmPrincipal frmPrincipal = new FrmPrincipal();
-            //frmPrincipal.ShowDialog();
             this.Close();
         }
     }
