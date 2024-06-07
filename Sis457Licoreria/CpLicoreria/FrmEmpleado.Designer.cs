@@ -61,6 +61,7 @@
             this.erpApellidos = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpSalario = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpApellidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpSalario)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -89,12 +91,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Green;
             this.groupBox1.Controls.Add(this.dgvLista);
-            this.groupBox1.Location = new System.Drawing.Point(80, 180);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(80, 193);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.groupBox1.Size = new System.Drawing.Size(624, 345);
+            this.groupBox1.Size = new System.Drawing.Size(1066, 399);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista de Empleados";
@@ -104,6 +109,7 @@
             this.dgvLista.AllowUserToAddRows = false;
             this.dgvLista.AllowUserToDeleteRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLista.BackgroundColor = System.Drawing.Color.White;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.Location = new System.Drawing.Point(0, 37);
             this.dgvLista.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -112,16 +118,16 @@
             this.dgvLista.RowHeadersVisible = false;
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(608, 295);
+            this.dgvLista.Size = new System.Drawing.Size(1054, 361);
             this.dgvLista.TabIndex = 0;
             // 
             // txtParametro
             // 
-            this.txtParametro.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParametro.Location = new System.Drawing.Point(80, 132);
+            this.txtParametro.Font = new System.Drawing.Font("Franklin Gothic Book", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParametro.Location = new System.Drawing.Point(428, 27);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(735, 22);
+            this.txtParametro.Size = new System.Drawing.Size(653, 28);
             this.txtParametro.TabIndex = 39;
             // 
             // panel1
@@ -130,17 +136,17 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(1013, 222);
+            this.panel1.Location = new System.Drawing.Point(1169, 206);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 303);
+            this.panel1.Size = new System.Drawing.Size(248, 385);
             this.panel1.TabIndex = 42;
             // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(40, 217);
+            this.btnSalir.Location = new System.Drawing.Point(41, 216);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(157, 55);
@@ -198,10 +204,10 @@
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(1013, 110);
+            this.btnBuscar.Location = new System.Drawing.Point(1100, 18);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(248, 58);
+            this.btnBuscar.Size = new System.Drawing.Size(174, 44);
             this.btnBuscar.TabIndex = 40;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -218,7 +224,7 @@
             0,
             0});
             this.nudSalario.Name = "nudSalario";
-            this.nudSalario.Size = new System.Drawing.Size(255, 22);
+            this.nudSalario.Size = new System.Drawing.Size(255, 30);
             this.nudSalario.TabIndex = 18;
             // 
             // txtUsuario
@@ -244,7 +250,7 @@
             this.cbxCargo.Location = new System.Drawing.Point(585, 21);
             this.cbxCargo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cbxCargo.Name = "cbxCargo";
-            this.cbxCargo.Size = new System.Drawing.Size(261, 24);
+            this.cbxCargo.Size = new System.Drawing.Size(261, 33);
             this.cbxCargo.TabIndex = 6;
             // 
             // chkUsuario
@@ -253,7 +259,7 @@
             this.chkUsuario.Location = new System.Drawing.Point(432, 117);
             this.chkUsuario.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.chkUsuario.Name = "chkUsuario";
-            this.chkUsuario.Size = new System.Drawing.Size(139, 20);
+            this.chkUsuario.Size = new System.Drawing.Size(196, 29);
             this.chkUsuario.TabIndex = 7;
             this.chkUsuario.Text = "¿Asignar Usuario?";
             this.chkUsuario.UseVisualStyleBackColor = true;
@@ -274,12 +280,12 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(80, 96);
+            this.lblUsuario.Location = new System.Drawing.Point(20, 27);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(380, 29);
+            this.lblUsuario.Size = new System.Drawing.Size(386, 29);
             this.lblUsuario.TabIndex = 38;
-            this.lblUsuario.Text = "Buscar por Nombre del Empleado";
+            this.lblUsuario.Text = "Buscar por Nombre del Empleado:";
             // 
             // lblTelefono
             // 
@@ -316,6 +322,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.groupBox2.Controls.Add(this.nudSalario);
             this.groupBox2.Controls.Add(this.txtUsuario);
             this.groupBox2.Controls.Add(this.chkUsuario);
@@ -328,11 +335,12 @@
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.lblApellidos);
             this.groupBox2.Controls.Add(this.lblNombre);
-            this.groupBox2.Location = new System.Drawing.Point(65, 548);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(76, 624);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.groupBox2.Size = new System.Drawing.Size(908, 155);
+            this.groupBox2.Size = new System.Drawing.Size(1058, 188);
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -377,30 +385,34 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.BackColor = System.Drawing.Color.Green;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(464, 742);
+            this.btnGuardar.Location = new System.Drawing.Point(475, 841);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(172, 55);
             this.btnGuardar.TabIndex = 35;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(802, 742);
+            this.btnCancelar.Location = new System.Drawing.Point(828, 841);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(171, 55);
             this.btnCancelar.TabIndex = 36;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // erpCargo
@@ -427,17 +439,29 @@
             // 
             this.erpSalario.ContainerControl = this;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.txtParametro);
+            this.panel2.Controls.Add(this.lblUsuario);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(80, 96);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1324, 72);
+            this.panel2.TabIndex = 43;
+            // 
             // FrmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1465, 833);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1465, 911);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
@@ -457,8 +481,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpApellidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpSalario)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -496,5 +521,6 @@
         private System.Windows.Forms.ErrorProvider erpApellidos;
         private System.Windows.Forms.ErrorProvider erpNombre;
         private System.Windows.Forms.ErrorProvider erpSalario;
+        private System.Windows.Forms.Panel panel2;
     }
 }

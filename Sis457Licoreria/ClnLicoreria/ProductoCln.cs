@@ -24,17 +24,12 @@ namespace ClnLicoreria
             using (var context = new LabLicoreriaEntities())
             {
                 var existente = context.Producto.Find(producto.idProducto);
-                if (existente != null)
-                {
-                    existente.codigo = producto.codigo;
-                    existente.nombre = producto.nombre;
-                    existente.descripcion = producto.descripcion;
-                    existente.stock = producto.stock; // Actualización de stock
-                    existente.precio = producto.precio;
-                    existente.usuarioRegistro = producto.usuarioRegistro;
-                    return context.SaveChanges();
-                }
-                return 0;
+                existente.codigo = producto.codigo;
+                existente.nombre = producto.nombre;
+                existente.descripcion = producto.descripcion;
+                existente.precio = producto.precio;
+                existente.usuarioRegistro = producto.usuarioRegistro;
+                return context.SaveChanges();
             }
         }
 
@@ -43,13 +38,9 @@ namespace ClnLicoreria
             using (var context = new LabLicoreriaEntities())
             {
                 var existente = context.Producto.Find(idProducto);
-                if (existente != null)
-                {
-                    existente.estado = -1;
-                    existente.usuarioRegistro = usuarioRegistro;
-                    return context.SaveChanges();
-                }
-                return 0;
+                existente.estado = -1;
+                existente.usuarioRegistro = usuarioRegistro;
+                return context.SaveChanges();
             }
         }
 

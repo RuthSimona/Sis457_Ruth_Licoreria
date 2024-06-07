@@ -53,6 +53,7 @@
     <Compile Include="Categoria.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Cliente.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>

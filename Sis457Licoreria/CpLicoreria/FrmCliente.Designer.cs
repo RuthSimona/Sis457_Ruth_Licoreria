@@ -53,6 +53,7 @@
             this.erpRazonsocial = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCedula = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCelular = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pnlBuscar = new System.Windows.Forms.Panel();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -60,16 +61,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonsocial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).BeginInit();
+            this.pnlBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(0, 0);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1288, 43);
+            this.lblTitulo.Size = new System.Drawing.Size(1700, 43);
             this.lblTitulo.TabIndex = 15;
             this.lblTitulo.Text = "CLIENTES";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -77,7 +79,7 @@
             // btnEditar
             // 
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(184, 21);
+            this.btnEditar.Location = new System.Drawing.Point(268, 21);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(113, 57);
@@ -91,10 +93,10 @@
             // btnEliminar
             // 
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(339, 21);
+            this.btnEliminar.Location = new System.Drawing.Point(455, 21);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(113, 57);
+            this.btnEliminar.Size = new System.Drawing.Size(140, 52);
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,7 +107,7 @@
             // btnNuevo
             // 
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(19, 18);
+            this.btnNuevo.Location = new System.Drawing.Point(95, 21);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(113, 57);
@@ -119,7 +121,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiar.Location = new System.Drawing.Point(487, 21);
+            this.btnLimpiar.Location = new System.Drawing.Point(674, 18);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(113, 57);
@@ -132,16 +134,16 @@
             // 
             // txtRazon
             // 
-            this.txtRazon.Location = new System.Drawing.Point(20, 71);
+            this.txtRazon.Location = new System.Drawing.Point(20, 91);
             this.txtRazon.Margin = new System.Windows.Forms.Padding(4);
             this.txtRazon.Name = "txtRazon";
-            this.txtRazon.Size = new System.Drawing.Size(260, 22);
+            this.txtRazon.Size = new System.Drawing.Size(260, 30);
             this.txtRazon.TabIndex = 7;
             // 
             // btnVolver
             // 
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(627, 21);
+            this.btnVolver.Location = new System.Drawing.Point(855, 18);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(113, 57);
@@ -155,7 +157,7 @@
             // btnCancelar
             // 
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(49, 348);
+            this.btnCancelar.Location = new System.Drawing.Point(64, 416);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(216, 57);
@@ -167,7 +169,7 @@
             // btnGuardar
             // 
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(49, 272);
+            this.btnGuardar.Location = new System.Drawing.Point(65, 351);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(216, 57);
@@ -178,42 +180,43 @@
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(21, 220);
+            this.txtCelular.Location = new System.Drawing.Point(21, 290);
             this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(260, 22);
+            this.txtCelular.Size = new System.Drawing.Size(260, 30);
             this.txtCelular.TabIndex = 12;
             // 
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(17, 201);
+            this.lblCelular.Location = new System.Drawing.Point(17, 235);
             this.lblCelular.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(49, 16);
+            this.lblCelular.Size = new System.Drawing.Size(74, 25);
             this.lblCelular.TabIndex = 11;
             this.lblCelular.Text = "Celular";
             // 
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(17, 128);
+            this.lblCedula.Location = new System.Drawing.Point(17, 148);
             this.lblCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(128, 16);
+            this.lblCedula.Size = new System.Drawing.Size(187, 25);
             this.lblCedula.TabIndex = 9;
             this.lblCedula.Text = "Cedula de Identidad";
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(20, 148);
+            this.txtCedula.Location = new System.Drawing.Point(20, 174);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(260, 22);
+            this.txtCedula.Size = new System.Drawing.Size(260, 30);
             this.txtCedula.TabIndex = 10;
             // 
             // gbxDatos
             // 
+            this.gbxDatos.BackColor = System.Drawing.Color.White;
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.Controls.Add(this.lblRazon);
@@ -222,11 +225,12 @@
             this.gbxDatos.Controls.Add(this.lblCelular);
             this.gbxDatos.Controls.Add(this.lblCedula);
             this.gbxDatos.Controls.Add(this.txtCedula);
-            this.gbxDatos.Location = new System.Drawing.Point(861, 137);
+            this.gbxDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxDatos.Location = new System.Drawing.Point(1254, 164);
             this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
             this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxDatos.Size = new System.Drawing.Size(355, 447);
+            this.gbxDatos.Size = new System.Drawing.Size(355, 506);
             this.gbxDatos.TabIndex = 20;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos";
@@ -237,17 +241,17 @@
             this.lblRazon.Location = new System.Drawing.Point(17, 52);
             this.lblRazon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRazon.Name = "lblRazon";
-            this.lblRazon.Size = new System.Drawing.Size(87, 16);
+            this.lblRazon.Size = new System.Drawing.Size(127, 25);
             this.lblRazon.TabIndex = 8;
             this.lblRazon.Text = "Razon Social";
             // 
             // btnBuscar
             // 
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(717, 114);
+            this.btnBuscar.Location = new System.Drawing.Point(1316, 8);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(96, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(187, 52);
             this.btnBuscar.TabIndex = 19;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -259,56 +263,63 @@
             // 
             this.dgvLista.AllowUserToAddRows = false;
             this.dgvLista.AllowUserToDeleteRows = false;
+            this.dgvLista.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(32, 15);
+            this.dgvLista.Location = new System.Drawing.Point(8, 31);
             this.dgvLista.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLista.MultiSelect = false;
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(679, 292);
+            this.dgvLista.Size = new System.Drawing.Size(1087, 542);
             this.dgvLista.TabIndex = 14;
             // 
             // pnlAcciones
             // 
+            this.pnlAcciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pnlAcciones.Controls.Add(this.btnVolver);
             this.pnlAcciones.Controls.Add(this.btnLimpiar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(41, 486);
+            this.pnlAcciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlAcciones.Location = new System.Drawing.Point(49, 739);
             this.pnlAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(772, 98);
+            this.pnlAcciones.Size = new System.Drawing.Size(1095, 98);
             this.pnlAcciones.TabIndex = 18;
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(29, 99);
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.Location = new System.Drawing.Point(4, 24);
             this.lblBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(147, 16);
+            this.lblBuscar.Size = new System.Drawing.Size(197, 22);
             this.lblBuscar.TabIndex = 17;
             this.lblBuscar.Text = "Buscar por razon social";
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(33, 119);
+            this.txtBuscar.Location = new System.Drawing.Point(231, 24);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(675, 22);
+            this.txtBuscar.Size = new System.Drawing.Size(1044, 30);
             this.txtBuscar.TabIndex = 16;
             // 
             // gbxLista
             // 
+            this.gbxLista.BackColor = System.Drawing.Color.Green;
             this.gbxLista.Controls.Add(this.dgvLista);
-            this.gbxLista.Location = new System.Drawing.Point(41, 152);
+            this.gbxLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxLista.ForeColor = System.Drawing.Color.White;
+            this.gbxLista.Location = new System.Drawing.Point(41, 164);
             this.gbxLista.Margin = new System.Windows.Forms.Padding(4);
             this.gbxLista.Name = "gbxLista";
             this.gbxLista.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxLista.Size = new System.Drawing.Size(772, 315);
+            this.gbxLista.Size = new System.Drawing.Size(1103, 554);
             this.gbxLista.TabIndex = 15;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Clientes";
@@ -325,22 +336,35 @@
             // 
             this.erpCelular.ContainerControl = this;
             // 
+            // pnlBuscar
+            // 
+            this.pnlBuscar.BackColor = System.Drawing.Color.White;
+            this.pnlBuscar.Controls.Add(this.lblBuscar);
+            this.pnlBuscar.Controls.Add(this.txtBuscar);
+            this.pnlBuscar.Controls.Add(this.btnBuscar);
+            this.pnlBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlBuscar.Location = new System.Drawing.Point(41, 59);
+            this.pnlBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBuscar.Name = "pnlBuscar";
+            this.pnlBuscar.Size = new System.Drawing.Size(1568, 70);
+            this.pnlBuscar.TabIndex = 19;
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 642);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1700, 850);
+            this.Controls.Add(this.pnlBuscar);
             this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.gbxDatos);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.pnlAcciones);
-            this.Controls.Add(this.lblBuscar);
-            this.Controls.Add(this.txtBuscar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCliente";
+            this.Load += new System.EventHandler(this.FrmCliente_Load);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
@@ -349,8 +373,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonsocial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).EndInit();
+            this.pnlBuscar.ResumeLayout(false);
+            this.pnlBuscar.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -380,5 +405,6 @@
         private System.Windows.Forms.ErrorProvider erpRazonsocial;
         private System.Windows.Forms.ErrorProvider erpCedula;
         private System.Windows.Forms.ErrorProvider erpCelular;
+        private System.Windows.Forms.Panel pnlBuscar;
     }
 }

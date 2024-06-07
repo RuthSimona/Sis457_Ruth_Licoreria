@@ -65,6 +65,7 @@
             this.erpRazonSocial = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpCelular = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpProducto = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgListaVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadP)).BeginInit();
             this.gbxProducto.SuspendLayout();
@@ -77,25 +78,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonSocial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProducto)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dvgListaVenta
             // 
             this.dvgListaVenta.AllowUserToAddRows = false;
             this.dvgListaVenta.AllowUserToDeleteRows = false;
-            this.dvgListaVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgListaVenta.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dvgListaVenta.ColumnHeadersHeight = 29;
+            this.dvgListaVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvgListaVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dvgIdProducto,
             this.dvgProducto,
             this.dvgPrecio,
             this.dvgCantidad,
             this.dvgSubTotal});
-            this.dvgListaVenta.Location = new System.Drawing.Point(125, 382);
-            this.dvgListaVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.dvgListaVenta.Location = new System.Drawing.Point(27, 38);
+            this.dvgListaVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dvgListaVenta.Name = "dvgListaVenta";
             this.dvgListaVenta.ReadOnly = true;
             this.dvgListaVenta.RowHeadersWidth = 51;
-            this.dvgListaVenta.Size = new System.Drawing.Size(807, 185);
+            this.dvgListaVenta.Size = new System.Drawing.Size(1051, 240);
             this.dvgListaVenta.TabIndex = 23;
             // 
             // dvgIdProducto
@@ -142,34 +146,36 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(960, 421);
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(1242, 410);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(38, 16);
+            this.lblTotal.Size = new System.Drawing.Size(56, 25);
             this.lblTotal.TabIndex = 22;
             this.lblTotal.Text = "Total";
             // 
             // btnRegistrarVenta
             // 
-            this.btnRegistrarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarVenta.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnRegistrarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrarVenta.Location = new System.Drawing.Point(962, 489);
-            this.btnRegistrarVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarVenta.Location = new System.Drawing.Point(1244, 478);
+            this.btnRegistrarVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrarVenta.Name = "btnRegistrarVenta";
-            this.btnRegistrarVenta.Size = new System.Drawing.Size(163, 63);
+            this.btnRegistrarVenta.Size = new System.Drawing.Size(196, 63);
             this.btnRegistrarVenta.TabIndex = 21;
             this.btnRegistrarVenta.Text = " Registrar\r\nVenta";
             this.btnRegistrarVenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistrarVenta.UseVisualStyleBackColor = true;
+            this.btnRegistrarVenta.UseVisualStyleBackColor = false;
             this.btnRegistrarVenta.Click += new System.EventHandler(this.btnRegistrarVenta_Click);
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(92, 88);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(91, 27);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(999, 38);
+            this.lblTitulo.Size = new System.Drawing.Size(1156, 63);
             this.lblTitulo.TabIndex = 16;
             this.lblTitulo.Text = "Registro Venta";
             // 
@@ -177,37 +183,37 @@
             // 
             this.cbxProducto.FormattingEnabled = true;
             this.cbxProducto.Location = new System.Drawing.Point(196, 49);
-            this.cbxProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxProducto.Name = "cbxProducto";
-            this.cbxProducto.Size = new System.Drawing.Size(160, 24);
+            this.cbxProducto.Size = new System.Drawing.Size(160, 30);
             this.cbxProducto.TabIndex = 8;
             this.cbxProducto.SelectedIndexChanged += new System.EventHandler(this.cbxProducto_SelectedIndexChanged_1);
             // 
             // tbxIdProducto
             // 
             this.tbxIdProducto.Location = new System.Drawing.Point(117, 24);
-            this.tbxIdProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxIdProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbxIdProducto.Name = "tbxIdProducto";
-            this.tbxIdProducto.Size = new System.Drawing.Size(31, 22);
+            this.tbxIdProducto.Size = new System.Drawing.Size(31, 28);
             this.tbxIdProducto.TabIndex = 6;
             // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(581, 20);
+            this.lblCantidad.Location = new System.Drawing.Point(659, 26);
             this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad.Size = new System.Drawing.Size(82, 22);
             this.lblCantidad.TabIndex = 7;
             this.lblCantidad.Text = "Cantidad";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(387, 25);
+            this.lblPrecio.Location = new System.Drawing.Point(465, 31);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(46, 16);
+            this.lblPrecio.Size = new System.Drawing.Size(61, 22);
             this.lblPrecio.TabIndex = 6;
             this.lblPrecio.Text = "Precio";
             // 
@@ -217,7 +223,7 @@
             this.lblNombre.Location = new System.Drawing.Point(192, 30);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.Size = new System.Drawing.Size(73, 22);
             this.lblNombre.TabIndex = 5;
             this.lblNombre.Text = "Nombre";
             // 
@@ -227,14 +233,14 @@
             this.lblCodigo.Location = new System.Drawing.Point(12, 25);
             this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(51, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(67, 22);
             this.lblCodigo.TabIndex = 4;
             this.lblCodigo.Text = "Codigo";
             // 
             // nudCantidadP
             // 
-            this.nudCantidadP.Location = new System.Drawing.Point(585, 47);
-            this.nudCantidadP.Margin = new System.Windows.Forms.Padding(4);
+            this.nudCantidadP.Location = new System.Drawing.Point(663, 53);
+            this.nudCantidadP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudCantidadP.Maximum = new decimal(new int[] {
             50,
             0,
@@ -246,7 +252,7 @@
             0,
             0});
             this.nudCantidadP.Name = "nudCantidadP";
-            this.nudCantidadP.Size = new System.Drawing.Size(160, 22);
+            this.nudCantidadP.Size = new System.Drawing.Size(160, 28);
             this.nudCantidadP.TabIndex = 3;
             this.nudCantidadP.Value = new decimal(new int[] {
             1,
@@ -256,20 +262,22 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(968, 270);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(1243, 273);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(135, 78);
+            this.btnAgregar.Size = new System.Drawing.Size(197, 57);
             this.btnAgregar.TabIndex = 20;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // gbxProducto
             // 
+            this.gbxProducto.BackColor = System.Drawing.Color.White;
             this.gbxProducto.Controls.Add(this.txtCodigo);
             this.gbxProducto.Controls.Add(this.txtPrecio);
             this.gbxProducto.Controls.Add(this.cbxProducto);
@@ -279,11 +287,12 @@
             this.gbxProducto.Controls.Add(this.lblNombre);
             this.gbxProducto.Controls.Add(this.lblCodigo);
             this.gbxProducto.Controls.Add(this.nudCantidadP);
-            this.gbxProducto.Location = new System.Drawing.Point(125, 248);
-            this.gbxProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxProducto.Location = new System.Drawing.Point(113, 248);
+            this.gbxProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbxProducto.Name = "gbxProducto";
-            this.gbxProducto.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxProducto.Size = new System.Drawing.Size(835, 100);
+            this.gbxProducto.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxProducto.Size = new System.Drawing.Size(1086, 100);
             this.gbxProducto.TabIndex = 19;
             this.gbxProducto.TabStop = false;
             this.gbxProducto.Text = "Información del Producto";
@@ -291,89 +300,91 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(15, 53);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(133, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(133, 26);
             this.txtCodigo.TabIndex = 26;
             this.txtCodigo.Tag = null;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(390, 47);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecio.Location = new System.Drawing.Point(468, 53);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(133, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(133, 26);
             this.txtPrecio.TabIndex = 26;
             this.txtPrecio.Tag = null;
             this.txtPrecio.Value = "";
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(408, 46);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCelular.Location = new System.Drawing.Point(699, 51);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(132, 22);
+            this.txtCelular.Size = new System.Drawing.Size(116, 28);
             this.txtCelular.TabIndex = 7;
             // 
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(404, 25);
+            this.lblCelular.Location = new System.Drawing.Point(695, 25);
             this.lblCelular.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(49, 16);
+            this.lblCelular.Size = new System.Drawing.Size(67, 22);
             this.lblCelular.TabIndex = 6;
             this.lblCelular.Text = "Celular";
             // 
             // lblRazonSocial
             // 
             this.lblRazonSocial.AutoSize = true;
-            this.lblRazonSocial.Location = new System.Drawing.Point(228, 20);
+            this.lblRazonSocial.Location = new System.Drawing.Point(375, 23);
             this.lblRazonSocial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Size = new System.Drawing.Size(140, 16);
+            this.lblRazonSocial.Size = new System.Drawing.Size(183, 22);
             this.lblRazonSocial.TabIndex = 3;
             this.lblRazonSocial.Text = "Nombre/Razón Social";
             // 
             // lblCi
             // 
             this.lblCi.AutoSize = true;
-            this.lblCi.Location = new System.Drawing.Point(8, 25);
+            this.lblCi.Location = new System.Drawing.Point(100, 30);
             this.lblCi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCi.Name = "lblCi";
-            this.lblCi.Size = new System.Drawing.Size(144, 16);
+            this.lblCi.Size = new System.Drawing.Size(194, 22);
             this.lblCi.TabIndex = 2;
             this.lblCi.Text = "Carnet de Identidad/Nit";
             // 
             // txtrazonSocial
             // 
-            this.txtrazonSocial.Location = new System.Drawing.Point(232, 44);
-            this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(4);
+            this.txtrazonSocial.Location = new System.Drawing.Point(379, 55);
+            this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtrazonSocial.Name = "txtrazonSocial";
-            this.txtrazonSocial.Size = new System.Drawing.Size(132, 22);
+            this.txtrazonSocial.Size = new System.Drawing.Size(179, 28);
             this.txtrazonSocial.TabIndex = 1;
             // 
             // txtCi
             // 
-            this.txtCi.Location = new System.Drawing.Point(8, 44);
-            this.txtCi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCi.Location = new System.Drawing.Point(106, 56);
+            this.txtCi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCi.Name = "txtCi";
-            this.txtCi.Size = new System.Drawing.Size(132, 22);
+            this.txtCi.Size = new System.Drawing.Size(188, 28);
             this.txtCi.TabIndex = 0;
             // 
             // gbxCliente
             // 
+            this.gbxCliente.BackColor = System.Drawing.Color.White;
             this.gbxCliente.Controls.Add(this.txtCelular);
             this.gbxCliente.Controls.Add(this.lblCelular);
             this.gbxCliente.Controls.Add(this.lblRazonSocial);
             this.gbxCliente.Controls.Add(this.lblCi);
             this.gbxCliente.Controls.Add(this.txtrazonSocial);
             this.gbxCliente.Controls.Add(this.txtCi);
-            this.gbxCliente.Location = new System.Drawing.Point(545, 142);
-            this.gbxCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxCliente.Location = new System.Drawing.Point(545, 127);
+            this.gbxCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbxCliente.Name = "gbxCliente";
-            this.gbxCliente.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxCliente.Size = new System.Drawing.Size(545, 76);
+            this.gbxCliente.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxCliente.Size = new System.Drawing.Size(895, 91);
             this.gbxCliente.TabIndex = 18;
             this.gbxCliente.TabStop = false;
             this.gbxCliente.Text = "Informacion del Cliente";
@@ -381,36 +392,39 @@
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(8, 20);
+            this.lblFecha.Location = new System.Drawing.Point(11, 34);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(45, 16);
+            this.lblFecha.Size = new System.Drawing.Size(155, 22);
             this.lblFecha.TabIndex = 0;
-            this.lblFecha.Text = "Fecha";
+            this.lblFecha.Text = "Fecha de registro:";
             // 
             // btnVolver
             // 
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.BackColor = System.Drawing.Color.Red;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(962, 559);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Location = new System.Drawing.Point(1244, 548);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(124, 63);
+            this.btnVolver.Size = new System.Drawing.Size(196, 63);
             this.btnVolver.TabIndex = 24;
             this.btnVolver.Text = "Volver";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // gbxVenta
             // 
+            this.gbxVenta.BackColor = System.Drawing.Color.White;
             this.gbxVenta.Controls.Add(this.dtpFecha);
             this.gbxVenta.Controls.Add(this.lblFecha);
-            this.gbxVenta.Location = new System.Drawing.Point(125, 150);
-            this.gbxVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxVenta.Location = new System.Drawing.Point(125, 127);
+            this.gbxVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbxVenta.Name = "gbxVenta";
-            this.gbxVenta.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxVenta.Size = new System.Drawing.Size(267, 76);
+            this.gbxVenta.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxVenta.Size = new System.Drawing.Size(412, 99);
             this.gbxVenta.TabIndex = 17;
             this.gbxVenta.TabStop = false;
             this.gbxVenta.Text = "Infromación Venta";
@@ -419,17 +433,18 @@
             // 
             this.dtpFecha.Enabled = false;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(9, 37);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpFecha.Location = new System.Drawing.Point(252, 28);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(139, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(139, 28);
             this.dtpFecha.TabIndex = 1;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(963, 450);
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(1245, 439);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(181, 20);
+            this.txtTotal.Size = new System.Drawing.Size(181, 28);
             this.txtTotal.TabIndex = 25;
             this.txtTotal.Tag = null;
             // 
@@ -449,13 +464,29 @@
             // 
             this.erpProducto.ContainerControl = this;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.dvgListaVenta);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(113, 384);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1086, 292);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Registro de venta:";
+            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 689);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1453, 689);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.dvgListaVenta);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnRegistrarVenta);
             this.Controls.Add(this.lblTitulo);
@@ -483,6 +514,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpRazonSocial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCelular)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProducto)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,5 +558,6 @@
         private System.Windows.Forms.ErrorProvider erpProducto;
         private C1.Win.C1Input.C1TextBox txtPrecio;
         private C1.Win.C1Input.C1TextBox txtCodigo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

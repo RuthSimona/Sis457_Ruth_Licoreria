@@ -210,14 +210,14 @@ GO
 -- Insertar datos iniciales
 INSERT INTO Empleado (nombre, apellidos, telefono, cargo, salario)
 VALUES 
-('Juan', 'Pérez', '555-1234', 'Gerente', 5000),
-('Anabe', 'González', '555-5678', 'Cajero', 2500);
+('Juan', 'Pérez', '75551234', 'Gerente', 5000),
+('Anabel', 'González', '75555678', 'Cajero', 2500);
 GO
 
 INSERT INTO Usuario (idEmpleado, usuario, clave)
 VALUES 
-(1, 'Juancho', 'hola123'),
-(2, 'Ana', 'holo123');
+(1, 'Juancho', 'i0hcoO/nssY6WOs9pOp5Xw=='),
+(2, 'Ana', 'i0hcoO/nssY6WOs9pOp5Xw==');
 GO
 
 INSERT INTO Categoria (nombre)
