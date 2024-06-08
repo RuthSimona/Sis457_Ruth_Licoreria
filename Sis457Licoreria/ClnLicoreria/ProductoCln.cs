@@ -29,7 +29,7 @@ namespace ClnLicoreria
                 existente.nombre = producto.nombre;
                 existente.descripcion = producto.descripcion;
                 existente.precio = producto.precio;
-                existente.stock = producto.stock; // Asegúrate de incluir el campo stock
+                existente.stock = producto.stock; 
                 existente.usuarioRegistro = producto.usuarioRegistro;
                 return context.SaveChanges();
             }
