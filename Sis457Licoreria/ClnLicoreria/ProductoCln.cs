@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ClnLicoreria
 {
     public class ProductoCln
@@ -28,6 +29,7 @@ namespace ClnLicoreria
                 existente.nombre = producto.nombre;
                 existente.descripcion = producto.descripcion;
                 existente.precio = producto.precio;
+                existente.stock = producto.stock; // Asegúrate de incluir el campo stock
                 existente.usuarioRegistro = producto.usuarioRegistro;
                 return context.SaveChanges();
             }

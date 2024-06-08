@@ -19,8 +19,7 @@ namespace CadLicoreria
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public decimal precio { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public int stock { get; set; }
         public short estado { get; set; }
         public string categoria { get; set; }
     }

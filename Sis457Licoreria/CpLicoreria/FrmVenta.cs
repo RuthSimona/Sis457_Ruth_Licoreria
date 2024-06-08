@@ -2,17 +2,19 @@
 using ClnLicoreria;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CpLicoreria
 {
     public partial class FrmVenta : Form
     {
+        private decimal sumaTotal = 0;
+
         public FrmVenta()
         {
             InitializeComponent();
         }
-
 
         private void FrmVenta_Load(object sender, EventArgs e)
         {
@@ -20,69 +22,90 @@ namespace CpLicoreria
 
             if (productos.Count > 0)
             {
-                cbxProducto.DataSource = productos;
-                cbxProducto.DisplayMember = "Nombre";
-                cbxProducto.SelectedIndex = -1;
-
-                tbxIdProducto.Enabled = false;
-                txtPrecio.Enabled = false;
-                txtCodigo.Enabled = false;
+                txtProductoCodigo.Enabled = false;
+                txtPrecioUnidad.Enabled = false;
+                txtProductoNombre.Enabled = false;
+                txtDescripcion.Enabled = false;
+                txtStock.Enabled = false;
             }
         }
 
-        decimal sumaTotal = 0;
-
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-            if (validar())
+            using (var frmBusqueda = new FrmBusqueda())
             {
-                int id = Convert.ToInt32(tbxIdProducto.Text.Trim());
-                string producto = cbxProducto.Text.Trim();
-                decimal precio = Convert.ToDecimal(txtPrecio.Text.Trim());
-                int cantidad = (int)nudCantidadP.Value;
-                decimal subtotal = precio * cantidad;
+                if (frmBusqueda.ShowDialog() == DialogResult.OK)
+                {
+                    Producto productoSeleccionado = frmBusqueda.ProductoSeleccionado;
+                    if (productoSeleccionado != null)
+                    {
+                        txtProductoCodigo.Text = productoSeleccionado.codigo;
+                        txtIdProducto.Text = productoSeleccionado.idProducto.ToString();
+                        txtProductoNombre.Text = productoSeleccionado.nombre;
+                        txtDescripcion.Text = productoSeleccionado.descripcion;
+                        txtStock.Text = productoSeleccionado.stock.ToString();
+                        txtPrecioUnidad.Text = productoSeleccionado.precio.ToString();
+                    }
+                }
+            }
+        }
 
-                dvgListaVenta.Rows.Add(id, producto, precio, cantidad, subtotal);
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            if (ValidarProducto())
+            {
+                string codigoProducto = txtProductoCodigo.Text.Trim();
+                string nombreProducto = txtProductoNombre.Text.Trim();
+                decimal precioUnidad = Convert.ToDecimal(txtPrecioUnidad.Text.Trim());
+                int cantidad = Convert.ToInt32(txtCantidad.Text.Trim());
+                decimal subtotal = precioUnidad * cantidad;
+                string estado = txtStock.Text.Trim() == "0" ? "No disponible" : "Disponible";
+
+                dvgListaVenta.Rows.Add(txtIdProducto.Text, nombreProducto, precioUnidad, cantidad, subtotal);
                 sumaTotal += subtotal;
 
                 txtTotal.Text = sumaTotal.ToString();
 
-
-                limpiar();
+                LimpiarProducto();
             }
         }
 
-        private bool validar()
+        private bool ValidarProducto()
         {
             bool esValido = true;
-            erpCi.SetError(txtCi, "");
-            erpRazonSocial.SetError(txtrazonSocial, "");
-            erpCelular.SetError(txtCelular, "");
-            erpProducto.SetError(cbxProducto, "");
-            if (string.IsNullOrEmpty(txtCi.Text))
+            erpProducto.SetError(txtProductoCodigo, "");
+            erpProducto.SetError(txtProductoNombre, "");
+            erpProducto.SetError(txtPrecioUnidad, "");
+            erpProducto.SetError(txtCantidad, "");
+
+            if (string.IsNullOrEmpty(txtProductoCodigo.Text))
             {
                 esValido = false;
-                erpCi.SetError(txtCi, "El campo Carnet de Identidad es obligatorio");
-
+                erpProducto.SetError(txtProductoCodigo, "El campo Código de Producto es obligatorio");
             }
-            if (string.IsNullOrEmpty(txtrazonSocial.Text))
+
+            if (string.IsNullOrEmpty(txtPrecioUnidad.Text))
             {
                 esValido = false;
-                erpCi.SetError(txtCi, "El campo Razon Social es obligatorio");
-
+                erpProducto.SetError(txtPrecioUnidad, "El campo Precio Unitario es obligatorio");
             }
-            if (string.IsNullOrEmpty(txtCelular.Text))
+            else if (!decimal.TryParse(txtPrecioUnidad.Text.Trim(), out _))
             {
                 esValido = false;
-                erpCi.SetError(cbxProducto, "El campo celular es obligatorio");
-
+                erpProducto.SetError(txtPrecioUnidad, "El campo Precio Unitario debe ser un número decimal");
             }
-            if (string.IsNullOrEmpty(cbxProducto.Text))
+
+            if (string.IsNullOrEmpty(txtCantidad.Text))
             {
                 esValido = false;
-                erpCi.SetError(cbxProducto, "Debe seleccionar un producto");
-
+                erpProducto.SetError(txtCantidad, "El campo Cantidad es obligatorio");
             }
+            else if (!int.TryParse(txtCantidad.Text.Trim(), out _))
+            {
+                esValido = false;
+                erpProducto.SetError(txtCantidad, "El campo Cantidad debe ser un número entero");
+            }
+
             return esValido;
         }
 
@@ -94,68 +117,82 @@ namespace CpLicoreria
                 return;
             }
 
-            var cliente = new Cliente();
-            cliente.razonSocial = txtrazonSocial.Text.Trim();
-            cliente.cedulaIdentidad = txtCi.Text.Trim();
-            cliente.celular = txtCelular.Text.Trim();
-            cliente.usuarioRegistro = Util.usuario.usuario1;
-            cliente.fechaRegistro = DateTime.Now;
-            cliente.estado = 1;
+            var cliente = new Cliente
+            {
+                razonSocial = txtRazonSocial.Text.Trim(),
+                cedulaIdentidad = txtCi.Text.Trim(),
+                celular = txtCelular.Text.Trim(),
+                usuarioRegistro = Util.usuario.usuario1,
+                fechaRegistro = DateTime.Now,
+                estado = 1
+            };
+
             int idCliente = ClienteCln.insertar(cliente);
+            RegistrarVenta(idCliente);
+        }
 
+        private void RegistrarVenta(int idCliente)
+        {
+            var venta = new Venta
+            {
+                idUsuario = Util.usuario.idUsuario,
+                idCliente = idCliente,
+                totalVenta = Convert.ToDecimal(txtTotal.Text.Trim()),
+                fechaVenta = DateTime.Now,
+                usuarioRegistro = Util.usuario.usuario1,
+                fechaRegistro = DateTime.Now,
+                estado = 1
+            };
 
-
-            var venta = new Venta();
-            venta.idUsuario = Util.usuario.idUsuario;
-            venta.idCliente = idCliente;
-            venta.totalVenta = Convert.ToDecimal(txtTotal.Text.Trim());
-            venta.fechaVenta = DateTime.Now;
-            venta.usuarioRegistro = Util.usuario.usuario1;
-            venta.fechaRegistro = DateTime.Now;
-            venta.estado = 1;
             int idVenta = VentaCln.insertar(venta);
 
             foreach (DataGridViewRow row in dvgListaVenta.Rows)
             {
-                var ventaDetalle = new VentaDetalle();
-                ventaDetalle.idVenta = idVenta;
-                ventaDetalle.idProducto = Convert.ToInt32(row.Cells["dvgIdProducto"].Value);
-                ventaDetalle.cantidad = Convert.ToInt32(row.Cells["dvgCantidad"].Value);
-                ventaDetalle.precioUnitario = Convert.ToDecimal(row.Cells["dvgPrecio"].Value);
-                ventaDetalle.total = Convert.ToDecimal(row.Cells["dvgSubTotal"].Value);
-                ventaDetalle.usuarioRegistro = Util.usuario.usuario1;
-                ventaDetalle.fechaRegistro = DateTime.Now;
-                ventaDetalle.estado = 1;
+                if (row.IsNewRow) continue; // Saltar la fila nueva que no tiene datos
+
+                var ventaDetalle = new VentaDetalle
+                {
+                    idVenta = idVenta,
+                    idProducto = Convert.ToInt32(row.Cells[0].Value), // Usar índice en vez de nombre de columna
+                    cantidad = Convert.ToInt32(row.Cells[3].Value),  // Corregir índices según la estructura del DataGridView
+                    precioUnitario = Convert.ToDecimal(row.Cells[2].Value),
+                    total = Convert.ToDecimal(row.Cells[4].Value),
+                    usuarioRegistro = Util.usuario.usuario1,
+                    fechaRegistro = DateTime.Now,
+                    estado = 1
+                };
 
                 VentaDetalleCln.insertar(ventaDetalle);
+
+                // Actualizar el stock del producto
+                Producto producto = ProductoCln.get(ventaDetalle.idProducto);
+                producto.stock -= ventaDetalle.cantidad;
+                ProductoCln.actualizar(producto);
             }
+
+            MessageBox.Show("Venta registrada exitosamente", "::: Licorería - Mensaje :::", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LimpiarTodo();
+        }
+
+        private void LimpiarProducto()
+        {
+            txtProductoCodigo.Text = string.Empty;
+            txtProductoNombre.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtStock.Text = string.Empty;
+            txtPrecioUnidad.Text = string.Empty;
+            txtCantidad.Text = string.Empty;
+        }
+
+        private void LimpiarTodo()
+        {
+            LimpiarProducto();
+            txtCi.Text = string.Empty;
+            txtRazonSocial.Text = string.Empty;
+            txtCelular.Text = string.Empty;
             txtTotal.Text = string.Empty;
             dvgListaVenta.Rows.Clear();
-            MessageBox.Show("Venta guardada exitosamente", "::: Cafeteria - Mensaje :::", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        private void limpiar()
-        {
-            txtCodigo.Text = string.Empty;
-            cbxProducto.SelectedIndex = -1;
-            txtPrecio.Text = string.Empty;
-            nudCantidadP.Value = 1;
-        }
-
-        private void cbxProducto_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            if (cbxProducto.SelectedItem != null)
-            {
-                Producto productoSeleccionado = (Producto)cbxProducto.SelectedItem;
-                tbxIdProducto.Text = productoSeleccionado.idProducto.ToString();
-                txtPrecio.Text = productoSeleccionado.precio.ToString();
-                txtCodigo.Text = productoSeleccionado.codigo.ToString();
-            }
-            else
-            {
-                limpiar();
-            }
+            sumaTotal = 0;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

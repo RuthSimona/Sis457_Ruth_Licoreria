@@ -45,7 +45,14 @@ namespace CpLicoreria
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(955, 487);
+            limpiar(); // Limpiar campos
+
+            // Hacer visibles los campos de entrada
+            txtRazon.Visible = true;
+            txtCedula.Visible = true;
+            txtCelular.Visible = true;
+
+            Size = new Size(955, 487); // Ajustar el tamaño del formulario si es necesario
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
