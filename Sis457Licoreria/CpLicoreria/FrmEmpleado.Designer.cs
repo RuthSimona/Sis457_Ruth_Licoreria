@@ -91,10 +91,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Green;
+            this.groupBox1.BackColor = System.Drawing.Color.GreenYellow;
             this.groupBox1.Controls.Add(this.dgvLista);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(80, 193);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
@@ -132,6 +132,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
@@ -216,7 +217,7 @@
             // 
             // nudSalario
             // 
-            this.nudSalario.Location = new System.Drawing.Point(593, 69);
+            this.nudSalario.Location = new System.Drawing.Point(668, 69);
             this.nudSalario.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.nudSalario.Maximum = new decimal(new int[] {
             5000,
@@ -230,7 +231,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(624, 108);
+            this.txtUsuario.Location = new System.Drawing.Point(695, 107);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(228, 34);
@@ -247,7 +248,7 @@
             "Cajero/a",
             "Cocinero/a",
             "Personal de Limpieza"});
-            this.cbxCargo.Location = new System.Drawing.Point(585, 21);
+            this.cbxCargo.Location = new System.Drawing.Point(662, 24);
             this.cbxCargo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.cbxCargo.Name = "cbxCargo";
             this.cbxCargo.Size = new System.Drawing.Size(261, 33);

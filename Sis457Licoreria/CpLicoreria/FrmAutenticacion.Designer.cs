@@ -40,15 +40,11 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpContraseña = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pctClave = new System.Windows.Forms.PictureBox();
-            this.pctUsuario = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpContraseña)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctClave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // pctLogo
@@ -125,6 +121,7 @@
             // lblclave
             // 
             this.lblclave.AutoSize = true;
+            this.lblclave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblclave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblclave.Location = new System.Drawing.Point(397, 213);
             this.lblclave.Name = "lblclave";
@@ -146,7 +143,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.BackColor = System.Drawing.Color.White;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(391, 146);
             this.lblUsuario.Name = "lblUsuario";
@@ -162,24 +159,6 @@
             // 
             this.erpContraseña.ContainerControl = this;
             // 
-            // pctClave
-            // 
-            this.pctClave.Location = new System.Drawing.Point(358, 267);
-            this.pctClave.Name = "pctClave";
-            this.pctClave.Size = new System.Drawing.Size(32, 24);
-            this.pctClave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctClave.TabIndex = 35;
-            this.pctClave.TabStop = false;
-            // 
-            // pctUsuario
-            // 
-            this.pctUsuario.Location = new System.Drawing.Point(358, 177);
-            this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(25, 22);
-            this.pctUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctUsuario.TabIndex = 32;
-            this.pctUsuario.TabStop = false;
-            // 
             // FrmAutenticacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -190,10 +169,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnIniciar);
-            this.Controls.Add(this.pctClave);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.lblclave);
-            this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -205,8 +182,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpContraseña)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctClave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,10 +193,8 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnIniciar;
-        private System.Windows.Forms.PictureBox pctClave;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label lblclave;
-        private System.Windows.Forms.PictureBox pctUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.ErrorProvider erpUsuario;

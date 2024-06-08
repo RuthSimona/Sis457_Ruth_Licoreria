@@ -148,13 +148,13 @@ namespace CpLicoreria
 
             foreach (DataGridViewRow row in dvgListaVenta.Rows)
             {
-                if (row.IsNewRow) continue; // Saltar la fila nueva que no tiene datos
+                if (row.IsNewRow) continue; 
 
                 var ventaDetalle = new VentaDetalle
                 {
                     idVenta = idVenta,
-                    idProducto = Convert.ToInt32(row.Cells[0].Value), // Usar índice en vez de nombre de columna
-                    cantidad = Convert.ToInt32(row.Cells[3].Value),  // Corregir índices según la estructura del DataGridView
+                    idProducto = Convert.ToInt32(row.Cells[0].Value),
+                    cantidad = Convert.ToInt32(row.Cells[3].Value),  
                     precioUnitario = Convert.ToDecimal(row.Cells[2].Value),
                     total = Convert.ToDecimal(row.Cells[4].Value),
                     usuarioRegistro = Util.usuario.usuario1,
@@ -163,8 +163,6 @@ namespace CpLicoreria
                 };
 
                 VentaDetalleCln.insertar(ventaDetalle);
-
-                // Actualizar el stock del producto
                 Producto producto = ProductoCln.get(ventaDetalle.idProducto);
                 producto.stock -= ventaDetalle.cantidad;
                 ProductoCln.actualizar(producto);

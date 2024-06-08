@@ -45,14 +45,11 @@ namespace CpLicoreria
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            limpiar(); // Limpiar campos
-
-            // Hacer visibles los campos de entrada
+            limpiar();
             txtRazon.Visible = true;
             txtCedula.Visible = true;
             txtCelular.Visible = true;
-
-            Size = new Size(955, 487); // Ajustar el tamaño del formulario si es necesario
+            Size = new Size(955, 487); 
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -138,7 +135,7 @@ namespace CpLicoreria
                 }
                 listar();
                 btnCancelar.PerformClick();
-                MessageBox.Show("Producto guardado correctamente", "::: Cafeteria - Mensaje :::",
+                MessageBox.Show("Producto guardado correctamente", "::: Licoreria - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

@@ -88,7 +88,6 @@ namespace CpLicoreria
         {
             Application.Exit();
         }
-        // Desde aki
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             frmAutenticacion.Visible = true;

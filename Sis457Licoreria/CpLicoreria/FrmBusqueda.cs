@@ -35,6 +35,5 @@ namespace CpLicoreria
                 MessageBox.Show("Debe seleccionar un producto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

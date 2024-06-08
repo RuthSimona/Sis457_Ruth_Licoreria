@@ -48,6 +48,7 @@
             // gbxListaProductos
             // 
             this.gbxListaProductos.Controls.Add(this.dgvListaProductos);
+            this.gbxListaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxListaProductos.Location = new System.Drawing.Point(5, 47);
             this.gbxListaProductos.Name = "gbxListaProductos";
             this.gbxListaProductos.Size = new System.Drawing.Size(1047, 391);

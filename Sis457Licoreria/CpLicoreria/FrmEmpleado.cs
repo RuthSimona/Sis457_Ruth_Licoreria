@@ -61,7 +61,7 @@ namespace CpLicoreria
             }
             else
             {
-                MessageBox.Show("Seleccione un empleado para editar", "::: Minerva - Mensaje :::"
+                MessageBox.Show("Seleccione un empleado para editar", "::: Licoreria - Mensaje :::"
                     , MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -97,14 +97,14 @@ namespace CpLicoreria
             if (e.KeyChar == (char)Keys.Enter) listar();
         }
 
-        private bool esFormularioValido = true; // Variable para controlar si el formulario es válido
+        private bool esFormularioValido = true; 
 
         private bool validar()
         {
             bool esValido = true;
             erpNombre.SetError(txtNombre, "");
             erpApellidos.SetError(txtApellidos, "");
-            erpTelefono.SetError(txtTelefono, ""); // Reinicia el error anterior
+            erpTelefono.SetError(txtTelefono, ""); 
             erpCargo.SetError(cbxCargo, "");
             erpSalario.SetError(nudSalario, "");
             erpUsuario.SetError(txtUsuario, "");
@@ -145,7 +145,6 @@ namespace CpLicoreria
                 erpUsuario.SetError(txtUsuario, "El campo Usuario es obligatorio si está marcado");
             }
 
-            // Actualiza la variable esFormularioValido según la validez de los datos
             esFormularioValido = esValido;
 
             return esValido;
@@ -176,7 +175,7 @@ namespace CpLicoreria
                         var usuario = new Usuario
                         {
                             usuario1 = txtUsuario.Text.Trim(),
-                            clave = Util.Encrypt("hola123"), // Aquí se encripta la contraseña por defecto
+                            clave = Util.Encrypt("hola123"),
                             idEmpleado = id,
                             usuarioRegistro = "Juancho",
                             fechaRegistro = DateTime.Now,
@@ -185,7 +184,7 @@ namespace CpLicoreria
                         UsuarioCln.insertar(usuario);
                     }
                 }
-                else // Actualizar un empleado existente
+                else
                 {
                     if (dgvLista.CurrentCell != null)
                     {
@@ -195,7 +194,7 @@ namespace CpLicoreria
                     }
                     else
                     {
-                        MessageBox.Show("Seleccione un empleado para guardar cambios", "::: Minerva - Mensaje :::"
+                        MessageBox.Show("Seleccione un empleado para guardar cambios", "::: Licoreria - Mensaje :::"
                             , MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
@@ -203,7 +202,7 @@ namespace CpLicoreria
 
                 listar();
                 btnCancelar.PerformClick();
-                MessageBox.Show("Empleado guardado correctamente", "::: Minerva - Mensaje :::"
+                MessageBox.Show("Empleado guardado correctamente", "::: Licoreria - Mensaje :::"
                     , MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -215,20 +214,20 @@ namespace CpLicoreria
                 int index = dgvLista.CurrentCell.RowIndex;
                 int idEmpleado = Convert.ToInt32(dgvLista.Rows[index].Cells["idEmpleado"].Value);
                 string nombre = dgvLista.Rows[index].Cells["nombre"].Value.ToString();
-                DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el empleado {nombre}?", "::: Cafeteria - Mensaje :::"
+                DialogResult dialog = MessageBox.Show($"¿Está seguro que desea dar de baja el empleado {nombre}?", "::: Licoreria - Mensaje :::"
                     , MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                 if (dialog == DialogResult.OK)
                 {
                     EmpleadoCln.eliminar(idEmpleado, "Juancho");
                     listar();
-                    MessageBox.Show("Empleado dado de baja correctamente", "::: Cafeteria - Mensaje :::"
+                    MessageBox.Show("Empleado dado de baja correctamente", "::: Licoreria - Mensaje :::"
                         , MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione un empleado para eliminar", "::: Minerva - Mensaje :::"
+                MessageBox.Show("Seleccione un empleado para eliminar", "::: Licoreria - Mensaje :::"
                     , MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
