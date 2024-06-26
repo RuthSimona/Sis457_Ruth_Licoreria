@@ -45,11 +45,11 @@ namespace WebLicoreria.Controllers
         }
 
         // GET: Productos/Create
-        public IActionResult Create()
-        {
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria");
-            return View();
-        }
+public IActionResult Create()
+{
+    ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "Descripcion");
+    return View();
+}
 
         // POST: Productos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -81,7 +81,10 @@ namespace WebLicoreria.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria", producto.IdCategoria);
+
+            // Obtener la lista de categorías y seleccionar la categoría actual del producto
+            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "Descripcion", producto.IdCategoria);
+
             return View(producto);
         }
 
