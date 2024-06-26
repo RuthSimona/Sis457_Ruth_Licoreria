@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebLicoreria.Models.Ventum>
+
+@{
+    ViewData["Title"] = "Lista de Ventas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Ventas</h1>
+
+<p>
+    <a asp-action="Create">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaRegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroDocumento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoPago)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaRegistro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdVenta">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdVenta">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdVenta">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

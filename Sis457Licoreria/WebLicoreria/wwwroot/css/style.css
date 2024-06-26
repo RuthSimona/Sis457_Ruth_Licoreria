@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #8A2BE2; /* Tono morado */
+    --primary: #8A2BE2;
     --light: #F3F6F9;
     --dark: #191C24;
 }
@@ -36,12 +36,12 @@
 
 .btn-primary {
     color: #FFFFFF;
-    background-color: var(--primary); /* Usar variable primaria */
-    border-color: #6A0DAD; /* Borde morado más oscuro para botones primarios */
+    background-color: var(--primary);
+    border-color: #6A0DAD;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--primary); /* Morado */
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .btn-square {
@@ -152,7 +152,7 @@
         justify-content: center;
         background: #FFFFFF;
         border-radius: 40px;
-        color: var(--primary); /* Iconos morados */
+        color: var(--primary);
     }
 
     .sidebar .navbar .navbar-nav .nav-link:hover i,
@@ -201,7 +201,7 @@
         justify-content: center;
         background: #FFFFFF;
         border-radius: 40px;
-        color: var(--primary); /* Iconos morados */
+        color: var(--primary); 
     }
 
 .content .navbar .dropdown-toggle::after {

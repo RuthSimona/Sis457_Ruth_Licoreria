@@ -3,32 +3,112 @@
   "WorkspaceRootPath": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\ventas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\ventas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\usuarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\usuarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\categorias\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\categorias\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\ventas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\ventas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\categorias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\categorias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\categorias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\categorias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\categorias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\categorias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\ventas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\ventas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\ventas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\ventas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -39,24 +119,24 @@
       "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|solutionrelative:weblicoreria\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABE57C25-233A-4336-A777-72E1F641AED4}|WebLicoreria\\WebLicoreria.csproj|d:\\4to semestre\\weblicoreria\\sis457_ruth_licoreria\\sis457licoreria\\weblicoreria\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,94 +174,367 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Create.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Create.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T15:56:02.98Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Create.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Create.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T15:56:02.98Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "site.css",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "WebLicoreria\\wwwroot\\css\\site.css",
               "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\site.css",
               "RelativeToolTip": "WebLicoreria\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-26T02:58:14.376Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Usuarios\\Details.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Details.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Usuarios\\Details.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:20:00.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "WebLicoreria\\wwwroot\\css\\style.css",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "WebLicoreria\\wwwroot\\css\\style.css",
-              "ViewState": "AQIAAPwAAAAAAAAAAAAQwB0BAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-26T02:39:06.685Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Ventas\\Details.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Details.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Ventas\\Details.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAmwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:18:40.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Ventas\\Edit.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Edit.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Ventas\\Edit.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:18:24.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Usuarios\\Edit.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Usuarios\\Edit.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T02:09:01.565Z",
+              "WhenOpened": "2024-06-26T15:17:45.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Categorias\\Edit.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Edit.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Categorias\\Edit.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:12:41.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAACAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Edit.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Edit.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Edit.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAcwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T14:49:10.549Z",
+              "WhenOpened": "2024-06-26T15:12:30.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Details.cshtml",
               "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Details.cshtml",
               "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Details.cshtml",
               "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAcwDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-24T16:40:46.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Categorias\\Details.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Details.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Categorias\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:12:18.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\ProductosController.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "WebLicoreria\\Controllers\\ProductosController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwA8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T15:48:38.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\CategoriasController.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "WebLicoreria\\Controllers\\CategoriasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:17:30.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAMwDIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:54:47.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Categorias\\Index.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Index.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Categorias\\Index.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:51:20.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAmwGkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T15:25:32.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Categorias\\Create.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Create.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Categorias\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:38:07.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Index.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Index.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T16:20:24.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Ventas\\Index.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Index.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Ventas\\Index.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:55:56.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Categorias\\Delete.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Categorias\\Delete.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Categorias\\Delete.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:57:05.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Delete.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Delete.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Delete.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAcwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T17:57:15.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "WebLicoreria\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:18:03.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Usuarios\\Create.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Usuarios\\Create.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Usuarios\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:37:10.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VentasController.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\VentasController.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\VentasController.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "WebLicoreria\\Controllers\\VentasController.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAADwv5wAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:19:53.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Ventum.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Models\\Ventum.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Models\\Ventum.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Models\\Ventum.cs",
+              "RelativeToolTip": "WebLicoreria\\Models\\Ventum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:30:11.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Ventas\\Create.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Create.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Ventas\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:30:30.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Ventas\\Delete.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Ventas\\Delete.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Ventas\\Delete.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwCEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T14:36:55.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\RolesController.cs",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "WebLicoreria\\Controllers\\RolesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:16:50.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Producto.cs",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "WebLicoreria\\Models\\Producto.cs",
@@ -189,63 +542,50 @@
               "RelativeToolTip": "WebLicoreria\\Models\\Producto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T16:37:39.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADsAAAAAAAAAAAAmwEcAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T15:25:32.272Z",
+              "WhenOpened": "2024-06-24T16:37:39.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T14:49:10.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "WebLicoreria\\wwwroot\\css\\style.css",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "WebLicoreria\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-26T02:39:06.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\bootstrap.min.css",
               "RelativeDocumentMoniker": "WebLicoreria\\wwwroot\\css\\bootstrap.min.css",
               "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\wwwroot\\css\\bootstrap.min.css",
               "RelativeToolTip": "WebLicoreria\\wwwroot\\css\\bootstrap.min.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAACMegIA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwAUAAACMegIA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-26T03:01:53.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T03:01:53.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Index.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Index.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T16:20:24.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T14:49:13.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\HomeController.cs",
@@ -258,31 +598,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductosController.cs",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\ProductosController.cs",
-              "RelativeDocumentMoniker": "WebLicoreria\\Controllers\\ProductosController.cs",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Controllers\\ProductosController.cs",
-              "RelativeToolTip": "WebLicoreria\\Controllers\\ProductosController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwFQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T15:48:38.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Delete.cshtml",
-              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Productos\\Delete.cshtml",
-              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Productos\\Delete.cshtml",
-              "RelativeToolTip": "WebLicoreria\\Views\\Productos\\Delete.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAdAAAA",
+              "DocumentIndex": 32,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T17:57:15.308Z"
+              "WhenOpened": "2024-06-26T02:09:01.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 33,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebLicoreria\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebLicoreria\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T14:49:13.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "WebLicoreria\\Models\\ErrorViewModel.cs",
@@ -294,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebLicoreria\\Properties\\launchSettings.json",
@@ -306,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 36,
               "Title": "WebLicoreria",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\WebLicoreria.csproj",
               "RelativeDocumentMoniker": "WebLicoreria\\WebLicoreria.csproj",
@@ -317,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "WebLicoreria.csproj",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\WebLicoreria.csproj",
               "RelativeDocumentMoniker": "WebLicoreria\\WebLicoreria.csproj",
@@ -329,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Program.cs",
               "RelativeDocumentMoniker": "WebLicoreria\\Program.cs",
@@ -341,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 40,
               "Title": "LabLicoreriaWebContext.cs",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\Models\\LabLicoreriaWebContext.cs",
               "RelativeDocumentMoniker": "WebLicoreria\\Models\\LabLicoreriaWebContext.cs",
@@ -353,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\4to Semestre\\WEbLicoreria\\Sis457_Ruth_Licoreria\\Sis457Licoreria\\WebLicoreria\\appsettings.json",
               "RelativeDocumentMoniker": "WebLicoreria\\appsettings.json",
